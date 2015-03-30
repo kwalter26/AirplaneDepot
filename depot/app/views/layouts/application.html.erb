@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Southern Illinois Airplane Depot</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class='<%= controller.controller_name %>'>
+  <div id="banner">
+    <div id="columns">
+      <div id="side">
+        <ul>
+          <li><%= link_to "Home", store_index_path%></li>
+          <!--<li>%= link_to "Questions", faq_index_path%></li>
+          <li>%= link_to "Home", news_index_path%></li>
+          <li>%= link_to "Home", contact_index_path%></li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+<div id="main">
+  <%= yield %>
+</div>
+
+</body>
+</html>
